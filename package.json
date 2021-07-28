@@ -1,0 +1,24 @@
+{
+  "name": "flood.assistance.survey",
+  "version": "1.0.0",
+  "description": "Small survey for identifying tax preparation services for citizens",
+  "main": "index.js",
+  "repository": "https://github.com/CityOfDetroit/flood.assistance.survey.git",
+  "author": "Edgar Montes <jedgar1mx@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "start": "parcel src/index.html --https --no-cache -p 3000 --open",
+    "test": "./node_modules/.bin/cypress open",
+    "build": "parcel build src/index.html --no-cache --public-url '.' --no-source-maps -d build"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "eslint": "^7.11.0",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "sass": "^1.27.0"
+  }
+}

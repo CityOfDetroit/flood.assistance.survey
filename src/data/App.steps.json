@@ -1,0 +1,1381 @@
+{
+    "application": [
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-0-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "Let's find what assistance is available."
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "In response to the recent flooding damage a cross the city. The city of Detroit has various way to assist affected residents." 
+                                },
+                                {
+                                    "id"        : "card-0-body-1",
+                                    "tag"       : "p",
+                                    "content"   : "Currently we have 4 available options. Which option would you like to view?" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "step-0-form-0",
+                        "savedData"     : false,
+                        "type"          : "single-button",
+                        "position"      : "center",
+                        "requirements"  : {
+                            "inputType"                 : "button",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : false,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : false,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "APIURL"                    : null,
+                            "logic": [
+                                {
+                                    "validation"            : "Homeowners Insurance",
+                                    "validationType"        : "equal",
+                                    "next"                  : 1,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "validation"            : "FEMA",
+                                    "validationType"        : "equal",
+                                    "next"                  : 11,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "validation"            : "DWSD",
+                                    "validationType"        : "equal",
+                                    "next"                  : 4,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "validation"            : "Small Business Administration (SBA)",
+                                    "validationType"        : "equal",
+                                    "next"                  : 7,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "validation"            : "Assistance",
+                                    "validationType"        : "equal",
+                                    "next"                  : 10,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : null,
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-0-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"    : "insurance",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "insurance",
+                                        "description"   : "insurance",
+                                        "text"  : "Homeowners Insurance",
+                                        "label" : false
+                                    },
+                                    {   
+                                        "id"    : "sba",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "sba",
+                                        "description"   : "sba",
+                                        "text"  : "Small Business Administration (SBA)",
+                                        "label" : false
+                                    },
+                                    {   
+                                        "id"    : "fema",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "fema",
+                                        "description"   : "fema",
+                                        "text"  : "FEMA",
+                                        "label" : false
+                                    },
+                                    {   
+                                        "id"    : "dwsd",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "dwsd",
+                                        "description"   : "dwsd",
+                                        "text"  : "DWSD",
+                                        "label" : false
+                                    },
+                                    {   
+                                        "id"    : "assistance",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "assistance",
+                                        "description"   : "assistance",
+                                        "text"  : "Assistance",
+                                        "label" : false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-1-card-0",
+                        "type"      : "right pop-up",
+                        "title"     : {
+                            "type"  : "small",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "Did you file an insurance claim?" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "25-flooding",
+                        "type"          : "single-button",
+                        "position"      : "center",
+                        "savedData"     : true,
+                        "requirements"  : {
+                            "inputType"                 : "button",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : false,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : true,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "logic": [
+                                {
+                                    "validation"            : "Yes",
+                                    "validationType"        : "equal",
+                                    "next"                  : 3,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "validation"            : "No",
+                                    "validationType"        : "equal",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : "text",
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-2-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"    : "flooding",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "flooding",
+                                        "description"   : "flooding",
+                                        "text"  : "Yes",
+                                        "label" : false
+                                    },
+                                    {   
+                                        "id"    : "no-flooding",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "no-flooding",
+                                        "description"   : "no-flooding",
+                                        "text"  : "No",
+                                        "label" : false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints" :[]
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-3-card-0",
+                        "type"      : "right pop-up",
+                        "title"     : {
+                            "type"  : "small",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "If you have insurance, you must file a claim with your provider before applying to any other assistance." 
+                                },
+                                {
+                                    "id"        : "card-0-body-1",
+                                    "tag"       : "p",
+                                    "content"   : "If you’re covered, you should see something like WATER BACK-UP in your policy." 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints" :[]
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-4-card-0",
+                        "type"      : "right pop-up",
+                        "title"     : {
+                            "type"  : "small",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "Great!" 
+                                },
+                                {
+                                    "id"        : "card-0-body-1",
+                                    "tag"       : "p",
+                                    "content"   : "Even if you have insurance, they may not cover all of your damage from this event. Check to see the specific flood damage coverage you have." 
+                                },
+                                {
+                                    "id"        : "card-0-body-2",
+                                    "tag"       : "p",
+                                    "content"   : "Also, you can still apply to for FEMA assistance even if you have insurance." 
+                                },
+                                {
+                                    "id"        : "card-0-body-3",
+                                    "tag"       : "p",
+                                    "content"   : "If you have coverage and FEMA denies you, you can appeal."
+                                },
+                                {
+                                    "id"        : "card-0-body-4",
+                                    "tag"       : "a",
+                                    "link"      : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-customer-service/dwsd-damage-claims-sewage-backups/fema-sba-claim-assistance",
+                                    "content"   : "Start your FEMA claim"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints" :[]
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-5-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "Did you file a DWSD claim?" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "dwsd-claim",
+                        "type"          : "single-button",
+                        "position"      : "center",
+                        "savedData"     : true,
+                        "requirements"  : {
+                            "inputType"                 : "button",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : false,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : true,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "logic": [
+                                {
+                                    "validation"            : "Yes",
+                                    "validationType"        : "equal",
+                                    "next"                  : 6,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "validation"            : "No",
+                                    "validationType"        : "equal",
+                                    "next"                  : 5,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : "text",
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-5-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"    : "dwsd-claim",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "dwsd-claim",
+                                        "description"   : "dwsd-claim",
+                                        "text"  : "Yes",
+                                        "label" : false
+                                    },
+                                    {   
+                                        "id"    : "no-dwsd-claim",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "no-dwsd-claim",
+                                        "description"   : "no-dwsd-claim",
+                                        "text"  : "No",
+                                        "label" : false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-6-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "DWSD Claims"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "Give notice to DWSD within 45 days of discovery of damage with:" 
+                                },
+                                {
+                                    "id"        : "card-0-body-1",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-1-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "Your name, address, and telephone number" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-1-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "Address of your damaged property" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-1-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "Date of discovery and a brief description of the claim" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-1-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "For the June 25-26 rainstorm, claims must be filed by August 9, 2021" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-1-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "You can also file for damages from later storms, within 45 of those dates" 
+                                        }
+                                    ] 
+                                },
+                                {
+                                    "id"        : "card-0-body-2",
+                                    "tag"       : "p",
+                                    "content"   : "You can file your claim by calling:" 
+                                },
+                                {
+                                    "id"        : "card-0-body-3",
+                                    "tag"       : "a",
+                                    "link"      : "tel:313-267-8000",
+                                    "content"   : "313-267-8000" 
+                                },
+                                {
+                                    "id"        : "card-0-body-4",
+                                    "tag"       : "p",
+                                    "content"   : "Or online" 
+                                },
+                                {
+                                    "id"        : "card-0-body-5",
+                                    "tag"       : "a",
+                                    "link"      : "https://detroitmi.gov/waterdamageclaims",
+                                    "content"   : "Start online claim" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-7-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "Great!"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "Don't forget to apply for other assitance like FEMA and SBA" 
+                                },
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "a",
+                                    "link"      : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-customer-service/dwsd-damage-claims-sewage-backups/fema-sba-claim-assistance",
+                                    "content"   : "See FEMA and SBA process." 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-8-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "Did apply for SBA?" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "dwsd-claim",
+                        "type"          : "single-button",
+                        "position"      : "center",
+                        "savedData"     : true,
+                        "requirements"  : {
+                            "inputType"                 : "button",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : false,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : true,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "logic": [
+                                {
+                                    "validation"            : "Yes",
+                                    "validationType"        : "equal",
+                                    "next"                  : 9,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "validation"            : "No",
+                                    "validationType"        : "equal",
+                                    "next"                  : 8,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : "text",
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-8-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"    : "sba",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "sba",
+                                        "description"   : "sba",
+                                        "text"  : "Yes",
+                                        "label" : false
+                                    },
+                                    {   
+                                        "id"    : "no-sba",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "no-sba",
+                                        "description"   : "no-sba",
+                                        "text"  : "No",
+                                        "label" : false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-9-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "You must complete the SBA application to receive other funds!!" 
+                                },
+                                {
+                                    "id"        : "card-0-body-1",
+                                    "tag"       : "p",
+                                    "content"   : "If you have applied for FEMA, you need to complete this application as well" 
+                                },
+                                {
+                                    "id"        : "card-0-body-2",
+                                    "tag"       : "p",
+                                    "content"   : "You do not need to take the loan if approved, just need to apply" 
+                                },
+                                {
+                                    "id"        : "card-0-body-3",
+                                    "tag"       : "a",
+                                    "link"      : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-customer-service/dwsd-damage-claims-sewage-backups/fema-sba-claim-assistance",
+                                    "content"   : "Start your SBA application" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-10-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "Great!"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "Remember that you do not need to take the loan if approved" 
+                                },
+                                {
+                                    "id"        : "card-0-body-1",
+                                    "tag"       : "p",
+                                    "content"   : "Also, don't forget to apply for FEMA assistance." 
+                                },
+                                {
+                                    "id"        : "card-0-body-2",
+                                    "tag"       : "a",
+                                    "link"      : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-customer-service/dwsd-damage-claims-sewage-backups/fema-sba-claim-assistance",
+                                    "content"   : "Start your FEMA application" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-11-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "Need Assistance?"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "You can visit these at the Disaster Recovery Centers:" 
+                                },
+                                {
+                                    "id"        : "card-0-body-1",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-1-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "Kemeny Recreation Center (2260 S. Fort Street)" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-1-item-1",
+                                            "tag"       : "p",
+                                            "content"   : "Golightly Career Tech Center (900 Dickerson)" 
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id"        : "card-0-body-2",
+                                    "tag"       : "p",
+                                    "content"   : "Other places that can give you support:" 
+                                },
+                                {
+                                    "id"        : "card-0-body-3",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-3-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "MDHHS" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-3-item-1",
+                                            "tag"       : "p",
+                                            "content"   : "Red Cross" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-3-item-2",
+                                            "tag"       : "p",
+                                            "content"   : "City of Detroit Community Health Corps" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-3-item-3",
+                                            "tag"       : "p",
+                                            "content"   : "Wayne Metro Community Action Agency" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-3-item-4",
+                                            "tag"       : "p",
+                                            "content"   : "United Way" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-12-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "Did you submit a FEMA claim?" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "fema-claim",
+                        "type"          : "single-button",
+                        "position"      : "center",
+                        "savedData"     : true,
+                        "requirements"  : {
+                            "inputType"                 : "button",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : false,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : true,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "logic": [
+                                {
+                                    "validation"            : "Yes",
+                                    "validationType"        : "equal",
+                                    "next"                  : 13,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "validation"            : "No",
+                                    "validationType"        : "equal",
+                                    "next"                  : 12,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : "text",
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-12-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"    : "fema",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "fema",
+                                        "description"   : "fema",
+                                        "text"  : "Yes",
+                                        "label" : false
+                                    },
+                                    {   
+                                        "id"    : "no-fema",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "no-fema",
+                                        "description"   : "no-fema",
+                                        "text"  : "No",
+                                        "label" : false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-13-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "Start your claim"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "FEMA application deadline: September 13th, 2021" 
+                                },
+                                {
+                                    "id"        : "card-0-body-1",
+                                    "tag"       : "p",
+                                    "content"   : "You are eligible to apply for FEMA Individual Assistance if:" 
+                                },
+                                {
+                                    "id"        : "card-0-body-2",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-2-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "You were affected by the June 25-26 floods" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-2-item-1",
+                                            "tag"       : "p",
+                                            "content"   : "Your residence has areas that became unsafe to occupy and live in (risk of mold from standing water, a furnace you had to replace, electrical damage, roof damage)" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-2-item-2",
+                                            "tag"       : "p",
+                                            "content"   : "You have a Social Security number OR a minor child in your household has a SSN" 
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id"        : "card-0-body-3",
+                                    "tag"       : "p",
+                                    "content"   : "You can start your FEMA claim by calling"
+                                },
+                                {
+                                    "id"        : "card-0-body-4",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-4-item-0",
+                                            "tag"       : "a",
+                                            "link"      : "tel:800-621-3362",
+                                            "content"   : "800-621-FEMA (3362)" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-4-item-1",
+                                            "tag"       : "a",
+                                            "link"      : "tel:800-462-7585",
+                                            "content"   : "800-462-7585 for those with hearing or speech impairments" 
+                                        },
+                                    ]
+                                },
+                                {
+                                    "id"        : "card-0-body-5",
+                                    "tag"       : "p",
+                                    "content"   : "By visiting any of the Detroit Disaster Recovery Centers (DRC) betweent 7AM to 7PM, 7 days a week."
+                                },
+                                {
+                                    "id"        : "card-0-body-6",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-6-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "Kemeny Recreation Center (2260 S. Fort Street)" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-6-item-1",
+                                            "tag"       : "p",
+                                            "content"   : "Golightly Career Tech Center (900 Dickerson)" 
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id"        : "card-0-body-7",
+                                    "tag"       : "p",
+                                    "content"   : "Or by going online."
+                                },
+                                {
+                                    "id"        : "card-0-body-8",
+                                    "tag"       : "a",
+                                    "link"      : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-customer-service/dwsd-damage-claims-sewage-backups/fema-sba-claim-assistance",
+                                    "content"   : "Start your FEMA claim online" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-14-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "Did you get denied?" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "fema-claim",
+                        "type"          : "single-button",
+                        "position"      : "center",
+                        "savedData"     : true,
+                        "requirements"  : {
+                            "inputType"                 : "button",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : false,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : true,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "logic": [
+                                {
+                                    "validation"            : "Yes",
+                                    "validationType"        : "equal",
+                                    "next"                  : 14,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "validation"            : "No",
+                                    "validationType"        : "equal",
+                                    "next"                  : 15,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : null,
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : "text",
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-2-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"    : "denied",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "denied",
+                                        "description"   : "denied",
+                                        "text"  : "Yes",
+                                        "label" : false
+                                    },
+                                    {   
+                                        "id"    : "approved",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "approved",
+                                        "description"   : "approved",
+                                        "text"  : "No",
+                                        "label" : false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-15-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "It's not the end"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "If you are Denied at any point:" 
+                                },
+                                {
+                                    "id"        : "card-0-body-1",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-1-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "Read your denial letter and identify why you were denied" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-1-item-1",
+                                            "tag"       : "p",
+                                            "content"   : "Gather documents and evidence for your appeal" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-1-item-2",
+                                            "tag"       : "p",
+                                            "content"   : "Write an appeal letter" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-1-item-3",
+                                            "tag"       : "p",
+                                            "content"   : "File your appeal letter along with your documents online or at Disaster Recovery Center within 60 days of the date on your denial letter." 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-1-item-4",
+                                            "tag"       : "p",
+                                            "content"   : "FEMA makes a final decision within 90 days" 
+                                        }
+                                    ] 
+                                },
+                                {
+                                    "id"        : "card-0-body-2",
+                                    "tag"       : "p",
+                                    "content"   : "If need in person assistance, please visit any of Detroit Disaster Recovery Centers (DRC) betweent 7AM to 7PM, 7 days a week." 
+                                },
+                                {
+                                    "id"        : "card-0-body-7",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-7-item-0",
+                                            "tag"       : "p",
+                                            "content"   : "Kemeny Recreation Center (2260 S. Fort Street)" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-7-item-1",
+                                            "tag"       : "p",
+                                            "content"   : "Golightly Career Tech Center (900 Dickerson)" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Flood Assistance Checklist",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-16-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "Great!!"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "Glad you are getting the help you need. While you wait for the funds to show. Don't forget to apply to other options like insurance, SBA and DWSD." 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
+            }
+        }
+    ]
+}
