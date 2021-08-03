@@ -762,12 +762,12 @@
                                 {
                                     "id"        : "card-0-body-1",
                                     "tag"       : "p",
-                                    "content"   : "If you have applied for FEMA, you need to complete this application as well" 
+                                    "content"   : "If you have applied for FEMA, you need to complete this application as well." 
                                 },
                                 {
                                     "id"        : "card-0-body-2",
                                     "tag"       : "p",
-                                    "content"   : "You do not need to take the loan if approved. You just need to apply" 
+                                    "content"   : "You do not need to take the loan if approved. You just need to apply. Note: SBA Loans are not just for businesses - they are for everyone. Renters, homeowners, landlords, businesses, nonprofits, and religious organizations are all able to apply for low-interest flexible loans." 
                                 },
                                 {
                                     "id"        : "card-0-body-3",
