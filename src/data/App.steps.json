@@ -1128,13 +1128,13 @@
                                 {
                                     "id"        : "card-0-body-7",
                                     "tag"       : "p",
-                                    "content"   : "Or by going online."
+                                    "content"   : "Or by going online. For details about the application process, visit https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-customer-service/dwsd-damage-claims-sewage-backups/fema-sba-claim-assistance/fema-application-guide"
                                 },
                                 {
                                     "id"        : "card-0-body-8",
                                     "tag"       : "a",
                                     "link"      : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-customer-service/dwsd-damage-claims-sewage-backups/fema-sba-claim-assistance",
-                                    "content"   : "Start your FEMA claim online" 
+                                    "content"   : "Start your FEMA claim online - for details on " 
                                 }
                             ]
                         }
