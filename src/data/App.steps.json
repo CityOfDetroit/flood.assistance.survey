@@ -1279,7 +1279,7 @@
                                 {
                                     "id"        : "card-0-body-0",
                                     "tag"       : "strong",
-                                    "content"   : "If you are Denied at any point:" 
+                                    "content"   : "If you are denied, you can and should go to any of the DRCs to get in-person help:" 
                                 },
                                 {
                                     "id"        : "card-0-body-1",
@@ -1298,7 +1298,7 @@
                                         {
                                             "id"        : "card-0-body-1-item-2",
                                             "tag"       : "p",
-                                            "content"   : "Write an appeal letter" 
+                                            "content"   : "Write an appeal letter - For help on writing this letter, see https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-customer-service/dwsd-damage-claims-sewage-backups/fema-sba-claim-assistance/fema-application-guide" 
                                         },
                                         {
                                             "id"        : "card-0-body-1-item-3",
