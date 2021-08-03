@@ -58,7 +58,7 @@
                             "APIURL"                    : null,
                             "logic": [
                                 {
-                                    "validation"            : "Homeowners Insurance",
+                                    "validation"            : "Insurance",
                                     "validationType"        : "equal",
                                     "next"                  : 1,
                                     "isSwitchingFormType"   : false,
@@ -128,7 +128,7 @@
                                         "type"  : "submit",
                                         "name"  : "insurance",
                                         "description"   : "insurance",
-                                        "text"  : "Homeowners Insurance",
+                                        "text"  : "Insurance",
                                         "label" : false
                                     },
                                     {   
